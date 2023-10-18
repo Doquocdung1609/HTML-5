@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Truong trinh quan li sinh vien </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+		  <div class="card-header bg-success text-light">
+		  	Nhập thông tin sinh viên
+		  </div>
+		  <div class="card-body">
+		  	<form method="post" id="MyForm">
+			  	<div class="form-group group-fullname">
+			  		<label for="fullname">Họ và tên:</label>
+			  		<input required="true" type="text" name="name_fullname" id="fullname" class="form-control">
+			  	</div>
+				<div class="form-group group-fullname">
+					<label for="gioitinh">Giới tính:</label>
+					<input type="radio" name="gender" id="gioitinh" value="Nam" tabindex="Nam"> Nam
+					<input type="radio" name="gender" id="gioitinh" value="Nữ" tabindex="Nữ"> Nữ
+				</div>
+			  	<div class="form-group">
+			  		<label for="email">Email:</label>
+			  		<input required="true" type="email" name="name_email" id="email" class="form-control">
+			  	</div>
+			  	<div class="form-group">
+			  		<label for="birthday">Ngày sinh:</label>
+			  		<input type="date" name="name_birthday" id="birthday" class="form-control">
+			  	</div>
+				  <div class="form-group">
+					<label for="sdt">Số điện thoại:</label>
+					<input type="text" name=" name_sdt" id="sdt" class="form-control">
+				</div>
+			  	<button type="submit" class="btn btn-success" id="btn_save">Save</button>
+			  	<button type="reset" class="btn btn-warning" id="btn_reset">Reset</button>
+		  	</form>
+		  </div>
+		</div>
+
+		<table class="table table-bordered" style="margin-top: 20px">
+			<thead>
+				<tr class="bg-success">
+					<th>No</th>
+					<th>Họ và tên</th>
+					<th>Giới tính</th>
+					<th>Email</th>
+					<th>Ngày sinh</th>
+					<th>Số điện thoại</th>
+					<th width="50"></th>
+					<th width="50"></th>
+				</tr>
+			</thead>
+			<tbody id="student_list_id">
+			
+				
+			</tbody>
+		</table>
+	</div>
+
+	<script type="text/javascript">
+		var studentList = []
+		var currentIndex = -1
+
+		var json = localStorage.getItem('stdList')
+		if(json != null && json != '') {
+			studentList = JSON.parse(json)
+
+			showData()
+		}
+
+		$('#MyForm').submit(function() {
+			console.log('luuthongtinsinhvien')
+
+			var fname = $('#fullname').val()
+			var gioitinh= $('#gioitinh').val()
+			var email = $('#email').val()
+			var birthday = $('#birthday').val()
+			var sdt = $('#sdt').val()
+
+	
+			var std = {
+				'fullname': fname,
+				'gioitinh': gioitinh,
+				'email': email,
+				'birthday': birthday,
+				'sdt':sdt,
+			}
+
+			
+			if(currentIndex >= 0) {
+
+				studentList[currentIndex] = std;
+				currentIndex = -1
+			} else {
+				studentList.push(std)
+			}
+
+		
+			showData()
+
+			$('#btn_reset').click() 
+			return false;
+		})
+
+		function editStudent(index) {
+			currentIndex = index
+
+			var std = studentList[index]
+
+			$('#fullname').val(std.fullname)
+			$('#gioitinh').val(std.gioitinh)
+			$('#email').val(std.email)
+			$('#birthday').val(std.birthday)
+			$('#sdt').val(std.sdt)
+		}
+
+		function deleteStudent(index) {
+			var option = confirm('Ban co chac chan muon xoa sinh vien nay khong?')
+			if(!option) return
+
+			studentList.splice(index, 1)
+			
+			showData()
+		}
+
+		function showData() {
+
+			$('#student_list_id').empty()
+	
+			for (var i = 0; i < studentList.length; i++) {
+				$('#student_list_id').append(`<tr>
+					<td>${i+1}</td>
+					<td>${studentList[i].fullname}</td>
+					<td>${studentList[i].gioitinh}</td>
+					<td>${studentList[i].email}</td>
+					<td>${studentList[i].birthday}</td>
+					<td>${studentList[i].sdt}</td>
+					<td><button class="btn btn-warning" onclick="editStudent(${i})">Edit</button></td>
+					<td><button class="btn btn-danger" onclick="deleteStudent(${i})">Delete</button></td>
+				</tr>`)
+			}
+
+			var json = JSON.stringify(studentList)
+	
+			localStorage.setItem('stdList', json)
+		}
+	</script>
+</body>
+</html>
