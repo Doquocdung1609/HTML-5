@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Digital Email Marketing - Page</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		body {
+			background-color:  rgb(255,255,240);
+		}
+
+		.EmailEditor {
+			background-color: #FFFFDD;
+		}
+
+		#main {
+			width: 400px;
+			background-color: #DDFFEE;
+			padding: 0px 10px;
+			margin: 0px auto;
+		}
+
+		.imgHelp {
+			cursor: pointer;
+			color: blue;
+			background-color: #DDFFEE;
+			top: 10px;
+			right: 10px;
+			padding: 10px;
+			float: right;
+			margin-right: 35%;
+		}
+
+		#help {
+			/*position: absolute;*/
+			width: 500px;
+			height: 420px;
+			top: 10px;
+			background-color: #cfc;
+			padding: 0px 10px;
+			display: none;
+			border: solid #E4E7E7 2px;
+			color: #303030;
+			margin: 0px auto;
+		}
+
+		.Close {
+			text-align: right;
+			color: blue;
+			cursor: pointer;
+			float: right;
+		}
+
+		ul li {
+			list-style-image: url("data/bullet.jpg");
+			list-style-type: square;
+			list-style-position: inside;
+		}
+
+		.form-group {
+			display: flex;
+			width: 100%;
+			margin: 10px 0px;
+		}
+
+		.form-group label {
+			width: 20%;
+			float: left;
+			text-align: right;
+			padding-right: 10px;
+		}
+
+		.form-group input.EmailEditor {
+			float: left;
+			width: 80% !important;
+		}
+
+		.form-group textarea {
+			scrollbar-3dlight-color: #C0C0C0;
+			scrollbar-shadow-color: silver;
+			scrollbar-arrow-color: black;
+			scrollbar-face-color: gray;
+			width: 80% !important;
+		}
+
+		.form-group button {
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<label id="imgHelp" class="imgHelp" onclick="clickHelp()">HELP</label>
+	<div id="main">
+		<h2 style="text-align: center; padding-top: 10px;">Compose e-mail message</h2>
+		<div class="form-group">
+			<label class="form-label">To:</label>
+			<input type="text" name="to" class="EmailEditor">
+		</div>
+		<div class="form-group">
+			<label class="form-label">From:</label>
+			<input type="text" name="from" class="EmailEditor">
+		</div>
+		<div class="form-group">
+			<label class="form-label">Cc:</label>
+			<input type="text" name="cc" class="EmailEditor">
+		</div>
+		<div class="form-group">
+			<label class="form-label">Subject:</label>
+			<input type="text" name="subject" class="EmailEditor">
+		</div>
+		<div class="form-group">
+			<label class="form-label">Message:</label>
+			<textarea rows="5" class="EmailEditor" name="message"></textarea>
+		</div>
+		<div class="form-group">
+			<label class="form-label"></label>
+			<button>Send</button>
+			<button>Cancel</button>
+		</div>
+	</div>
+
+	<div id="help">
+		<h2>E-mail Editor Help</h2>
+		<ul>
+			<li>
+				<b>
+					To and CC:
+				</b>
+				<br/>
+				<b>To</b> and <b>CC</b> boxes allow you to enter the e-mail addresses of the recepients to whom to message has to sent Recipients will be able to see who else was sent the message by looking at the contents of the <b>To</b> and <b>CC</b> boxes.
+			</li>
+			<li>
+				<b>
+					Subject:
+				</b>
+				<br/>
+				The <b>Subject</b> box allows you to enter meaningful summary of the message.
+			</li>
+			<li>
+				<b>
+					Message:	
+				</b>
+				<br/>
+				The <b>Message</b> TextArea allows you to enter the text of your message.
+			</li>
+		</ul>
+		<label class="Close" onclick="clickClose()">Close</label>
+	</div>
+
+	<script type="text/javascript">
+		function clickHelp() {
+			console.log('testing...')
+			document.getElementById('help').style.display = 'block'
+			document.getElementById('main').style.display = 'none'
+			document.getElementById('imgHelp').style.display = 'none'
+		}
+
+		function clickClose() {
+			document.getElementById('help').style.display = 'none'
+			document.getElementById('main').style.display = 'block'
+			document.getElementById('imgHelp').style.display = 'block'
+		}
+	</script>
+</body>
+</html>
