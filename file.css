@@ -1,22 +1,89 @@
-.heading{
-    text-decoration: underline;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
-    text-transform: capitalize;
-    initial-value: xx-large;
-    font-weight: bold;
+
+body{
+    margin: 0px;
+    padding: 0px;
 }
-.general{
-    font-style: italic;
-    text-align: justify;
+
+
+.main{
+    width: 100%;
 }
-.places{
-    text-decoration: underline;
-    font-family: cursive;
-    font-size: medium;
-    text-transform: capitalize;
+
+.section{
+    width: 100%;
+    display:flex;
 }
-ul{
-    font-size: small;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+.section .section-left{
+    width: 50%;
+    padding: 5px;
+}
+
+.section .section-middle{
+    width: 50%;
+    padding: 5px;
+}
+
+.section .section-right{
+    width: 50%;
+    padding: 5px;
+}
+
+.header .banner img {
+	width: 20%;
+    height:40%;
+	object-fit: fill;
+}
+
+.header .menu ul {
+	list-style-type: none;
+	display: flex;
+	background-color: #ff5722;
+	margin: 0px;
+	padding: 0px;
+	mau: white;
+}
+
+.header .menu ul li {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.header .menu ul li:hover {
+	background-color: yellow;
+	color: black;
+}
+
+.section .section-left img, .section .section-middle img, .section .section-right img {
+	width: 100%;
+    padding: 0px;
+	margin: 0px;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.list-items {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.list-items li {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	border-bottom: solid 2px #c10f0f;
+	cursor: pointer;
+}
+
+.list-items li:hover {
+	background-color: grey;
+}
+
+.textheader{
+    font-size: 20px;
+	font-weight: bold;
+    color: rgb(11, 203, 232); 
 }

@@ -1,0 +1,64 @@
+body{
+    background-color:  #FFFFCC;
+}
+
+h2{
+text-decoration: underline;
+}
+
+#navigation{
+    position: absolute;
+    margin-left: 25%;
+    text-align: center;
+}
+
+#tablesectionOne{
+table-layout: fixed;
+text-align: center;
+background-color: #FFFFDD;
+position: absolute;
+margin-top: 7em;
+}
+
+#tablesectionTwo{
+    table-layout: fixed;
+    text-align: center;
+    background-color: #FFFFDD;
+    position: absolute;
+    margin-top: 7em;
+    }
+
+
+    #tablesectionThree{
+        table-layout: fixed;
+        text-align: center;
+        background-color: #FFFFDD;
+        position: absolute;
+        margin-top: 7em;
+        }
+
+
+        #tablesectionFour{
+            table-layout: fixed;
+            text-align: center;
+            background-color: #FFFFDD;
+            position: absolute;
+            margin-top: 7em;
+            }
+
+
+caption{
+
+    background-color: rgb(255,185,115);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+th{
+
+    border-style: solid;
+    border-width: thin;
+    border-color:  #D0D0D0;
+    empty-cells: show;
+}
+
