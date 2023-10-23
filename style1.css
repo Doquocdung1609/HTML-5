@@ -1,143 +1,294 @@
-body{
+body {
 	padding: 0px;
 	margin: 0px;
 }
+
+
+
+.header {
+	width: 200%;
+	display: flex;
+}
+
+.logo {
+    width: 30%;
+	background-color: blueviolet;
+	padding: 0px;
+	margin: 0px;
+}
+
+.logo img{
+    width: 400px;
+	height: 60px;
+    cursor: pointer;
+    padding-left: 40px;
+	object-fit: cover;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.timkiem{
+	background-color: blueviolet;
+	border: solid black 0px;
+	width: 90%;
+	display:flex;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	padding-right:30%;
+
+	
+
+}
+
+.timkiem input {
+	border: solid rgb(164, 123, 202);
+	width:20%;
+	height: 70%;
+padding-left: 10px;
+	
+}
+
+.timkiem button{
+	
+	background-color:blueviolet;
+border: none;
+cursor: pointer;
+width: 5%;
+color:white;
+
+}
+
+.timkiem h3{
+padding-left:5%;
+padding-top: 5px;
+color: white;
+cursor: pointer;
+}
+
 .container{
+	width: 70%;
+	display: block;
+	margin: 0px auto;
+	
+}
+
+.top{
 	width: 100%;
 	display: block;
 }
-.header{
-	width: 100%;
-	display: block;
-}
-.header .logo{
-	width: 100%;
-	display: flex;
-}
-.header .logo .text{
-	text-align: right;
-	margin: 0px;
+
+.menu{
 	padding: 0px;
+	margin: 0px;
+	width: 147%;
+	display: block;
 }
-.header .menu{
-	width: 100%;
-	display: flex;
-	background-color: #d60640;
-}
-.header .menu ul{
+
+.top .menu ul {
+	width: 70%;
+	margin: 0px;
 	display: flex;
 	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
 }
-.header .menu ul li{
-	padding-right: 10px;
-	padding-left: 15px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-right: solid black 1px;
+
+.top .menu ul li {
+	border-right: solid white 1px;
+	padding: 10px;
+	color: white;
+	text-transform: uppercase;
 	cursor: pointer;
+	color: black;
+}
 
+.top .menu ul li:hover {
+	background-color:grey;
 }
-.header .menu ul li:hover{
-	background-color: blue;
-}
-.header .container-center{
-	float: left;
+
+.note{
 	width: 100%;
+border: thin rgb(56, 56, 237);
+display: flex;
+padding: 0px;
+margin: 0px;
+padding-left: 3%;
 
+}
+
+.note h4{
+
+	padding: 0px;
+margin: 0px;
+}
+.note svg{
+	border: solid 2px blue;
+}
+.note h4:hover{
+	color: brown;
+	cursor: pointer;
+}
+
+.undertop{
+	padding: 0px;
+	margin: 0px;
+	display: block;
+}
+
+.undertop ul {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	list-style-type: none;
+background-color: black;
+
+}
+
+.undertop ul li {
+	border-right: solid white 1px;
+	padding: 5px;
+	color: white;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 0px;
+margin: 0px;
+text-align: center;
+}
+
+.undertop ul li:hover {
+	background-color: orange;
+}
+.undertop h2{
+	color: blue;
+}
+
+.undertop ul li img{
+	width:100%;
+	object-fit: cover;
+	cursor: pointer;
+}
+.list{
+	width: 70%;
+	display: block;
+	margin: 0px auto;
+	
 }
 .main{
-	display: flex;
-}
-.main .main-left{
-	width: 65%;
-	float: left;
-	border-right: solid white;
-}
-h1{
-	color: #797994;
-	padding: 10px;
-}
-.row{
 	width: 100%;
 	display: flex;
-}
-.col-4{
-	padding: 5px;
-	width: 40%;
-	float: left;
 
 }
-.col-6{
-	padding: 5px;
-	width: 60%;
-	float: left;
-}
-.col-6 .title{
-	padding-bottom: 40px;
-	font-family: cursive;
-}
-.main .main-right{
-	width: 35%;
-	padding: 0px;
-	float: left;
-}
-.main .main-right .search{
-	border: solid white 0px;
-	width: 100%;
-	display: flex;
-}
-.main .main-right .search input{
-	width: 80%;
-	padding: 0px;
-	margin: 0px;
-}
-.main .main-right .search button{
-	width: 20%;
-	padding: 0px;
-	margin: 0px;
-}
-.align-center {
+
+
+.content{
 	width: 70%;
-	margin: 0px auto;
-	display: flex;
+	padding: 0%;
+	margin: 0%;
+	display: block;
+	margin-right: solid black 2px;
 }
-.col-3{
-	width: 25%;
-	float: left;
-	padding: 5px;
-}
-.col-9{
-	width: 75%;
-	padding-left: 5px;
-	float: left;
-}
-.align-center1 {
-	width: center;
-	margin: 0px auto
-}
-.icon{
-	display: flex;
+
+.content ul {
+	width: 100%;
 	padding: 0px;
 	margin: 0px;
-}
-.icon img{
-	padding-left: 5px;
-}
-.youtube{
-	width: 80%;
+	
+	display: flex;
+	list-style-type: none;
+background-color: black;
 
 }
-{
- 	text-transform: uppercase;
-    font-weight: bold;
-    font-size: 20px;
+
+.content ul li {
+	border-right: solid white 1px;
+	padding: 5px;
+	color: white;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 0px;
+margin: 0px;
+text-align: center;
+
+
 }
-.row .col-6 .getlink{
-		padding-top: 15px; 
+
+.content ul li:hover {
+	background-color: orange;
 }
-.row .col-6 .getlink a{
-	text-decoration: none;
+
+.content ul li img{
+	width:100%;
+	object-fit: cover;
+	cursor: pointer;
+}
+.content h3{
+
+color:blue;
+}
+
+.main .menu-right {
+	width: 40%;
+	padding-left: 20px;
+}
+
+.panel {
+	display: flex;
+	
+}
+
+
+.panel .panel-heading {
+	width: 100%;
+	display: flex;
+	margin-right: solid black 2px;
+}
+
+.panel-heading ul{
+	width: 300%;
+	height:70%;
+	display: flex;
+	list-style-type: none;
+background-color: whitesmoke;
+
+padding: 0%;
+
+
+}
+
+.panel-heading ul li{
+	padding-top: 5px;
+	width: 200%;
+	border-right: solid white 3px;
+	cursor: pointer;
+color: black;
+text-align:center;
+}
+
+
+
+.panel-heading ul li:hover{
+	background-color: grey;
+}
+
+
+ .panel-body ul {
+	list-style-type: none;
+}
+
+ .panel-body ul li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: solid #eeeeee 1px;
+	text-align:center
+}
+.panel-body ul li img{
+	width: 100px;
+	height: 60px;
+	object-fit: cover;
+	padding: 0px;
+	cursor: pointer;
+}
+
+.panel-body ul li:hover{
 	color: red;
+	cursor: pointer;
 }
