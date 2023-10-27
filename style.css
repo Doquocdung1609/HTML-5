@@ -1,64 +1,72 @@
-body{
-    background-color:  #FFFFCC;
+.container {
+	width: 700px;
+	margin: 0px auto;
 }
 
-h2{
-text-decoration: underline;
+.panel {
+	width: 100%;
+	border: solid#4267b2 2px;
+	margin-bottom: 20px;
 }
 
-#navigation{
-    position: absolute;
-    margin-left: 25%;
-    text-align: center;
+.panel-heading {
+	background-color: #4267b2;
+	color: white;
+	font-weight: bold;
+	padding: 6px;
 }
 
-#tablesectionOne{
-table-layout: fixed;
-text-align: center;
-background-color: #FFFFDD;
-position: absolute;
-margin-top: 7em;
+.panel-body {
+	display: block;
 }
 
-#tablesectionTwo{
-    table-layout: fixed;
-    text-align: center;
-    background-color: #FFFFDD;
-    position: absolute;
-    margin-top: 7em;
-    }
-
-
-    #tablesectionThree{
-        table-layout: fixed;
-        text-align: center;
-        background-color: #FFFFDD;
-        position: absolute;
-        margin-top: 7em;
-        }
-
-
-        #tablesectionFour{
-            table-layout: fixed;
-            text-align: center;
-            background-color: #FFFFDD;
-            position: absolute;
-            margin-top: 7em;
-            }
-
-
-caption{
-
-    background-color: rgb(255,185,115);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+.panel-body label, .panel-body input, .panel-body select, .panel-body .form-group {
+	display: block;
+	width: 96%;
+	font-size: 16px;
+	margin: 0px auto;
+	margin-bottom: 6px;
 }
 
-th{
-
-    border-style: solid;
-    border-width: thin;
-    border-color:  #D0D0D0;
-    empty-cells: show;
+.panel-body label {
+	font-weight: bold;
 }
 
+.panel-body table {
+	width: 96%;
+	margin: 0px auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+table, th, td {
+	border: solid #c0bfbf 1px;
+}
+
+th, td {
+	padding: 5px;
+}
+
+.form-group .add{
+background-color: greenyellow;
+cursor: pointer;
+
+}
+
+.form-group .reset{
+	background-color: orange;
+	cursor: pointer;
+	
+}
+
+.edit{
+	background-color: orange;
+	cursor: pointer;
+
+}
+
+.delete{
+	background-color: red;
+	cursor: pointer;
+
+}

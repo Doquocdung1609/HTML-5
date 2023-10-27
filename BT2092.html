@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2092.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Exercise 1</title>
+</head>
+<body>
+    <div class="panel">
+<div class="panel-heading">
+<h2>ĐĂNG NHẬP HỆ THỐNG</h2>
+
+</div>
+
+<div class="panel-body">
+
+    <img src="login.png" height="100px;">
+
+<form method="post" id="LoginFormId">
+    <div class="form1">
+<label>Tài Khoản</label>
+<input required type="text" name="tai_khoan">
+
+</div>
+<div class="form1">
+    <label>Mật Khẩu</label>
+    <input required type="password" name="mat_khau">
+
+</div>
+
+
+
+    </div>
+
+    <div class="button">
+        <button type="submit" id="LoginId">Đăng nhập</button>
+        <button type="reset">Nhập lại</button>
+    
+    </div>
+</div>
+<script type="text/javascript">
+    $('#LoginFormId').submit(function ()
+    {
+        alert('Đăng nhập thành công')
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ON TAP FUNCTION</title>
+</head>
+<body>
+    <script type="text/javascript">
+         function nhapa(){
+            a = parseInt(prompt('Enter a'))
+        }
+        function nhapb(){
+            b = parseInt(prompt('Enter b'))
+        }
+         
+         function cong(a,b) {
+            sum=a+b;
+            return sum;
+        }
+        function tru(a,b) {
+            sub=a-b;
+            return sub;
+        }
+        function nhan(a,b) {
+            mul=a*b;
+            return mul;
+        }
+        function chia(a,b) {
+            div=a/b;
+            return div;
+        }
+        
+       nhapa()
+       nhapb()
+        document.write('TONG: ' +cong(a,b) +'<br>')
+        document.write('TRU: ' +tru(a,b) +'<br>')
+        document.write('TICH: ' +nhan(a,b) +'<br>')
+        document.write('THUONG: ' +chia(a,b) +'<br>')
+
+    </script>
+
+   
+</body>
+</html>

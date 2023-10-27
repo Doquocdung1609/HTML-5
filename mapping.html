@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAPPING</title>
+    <style type="text/css">
+		.panel {
+			width: 600px;
+			margin: 0px auto;
+			border: solid #2196f3 2px;
+		}
+
+		.panel .panel-heading {
+			background-color: #2196f3;
+			color: white;
+			font-size: 18px;
+			font-weight: bold;
+			padding: 10px;
+		}
+
+		.panel .panel-body {
+			padding: 10px;
+		}
+
+		.group-control {
+			margin-bottom: 15px;
+		}
+
+		.group-control label {
+			width: 120px;
+			float: left;
+			text-align: right;
+			padding-right: 10px;
+		}
+
+		.group-control input {
+			font-size: 16px;
+			padding: 5px;
+			width: 360px;
+		}
+
+		.btn {
+			font-size: 16px;
+			padding: 8px;
+			border: none;
+			border-radius: 25px;
+			cursor: pointer;
+		}
+
+		.btn-success {
+			background-color: blue;
+			color: white;
+		}
+
+		.btn-warning {
+			background-color: orange;
+		}
+
+		.btn:hover {
+			background-color: lightgreen;
+			color: black;
+		}
+	</style>
+    
+</head>
+<body>
+    <div class="panel">
+        <div class="panel-heading">
+            Register
+        </div>
+        <div class="panel-body">
+            <div class="group-control">
+                <label>Full Name: </label>
+                <input type="text" name="fullname" class="form-control" placeholder="Enter fullname" id="fullname_id" style="color: blue; font-size: 20px;">
+            </div>
+            <div class="group-control">
+                <label>Email: </label>
+                <input type="email" name="email" class="form-control" placeholder="Enter email" id="email_id">
+            </div>
+            <div class="group-control">
+                <label>Address: </label>
+                <input type="text" name="address" class="form-control" placeholder="Enter address" id="address_id">
+            </div>
+            <div class="group-control">
+                <label>&nbsp;</label>
+                <button class="btn btn-success" onclick="saveData()">Save Data</button>
+                <button class="btn btn-warning" onclick="resetData()">Reset</button>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        var fullnameTag = document.getElementById('fullname_id')
+        console.log(fullnameTag)
+        // console.log({
+        // 	'fullname': 'TRAN VAN ',
+        // 	'age': 90,
+        // 	'address': 'Ha Noi',
+        // 	'email': "5446@gmail.com",
+        // 	'phone': '12345678'
+        // })
+        //Goi thuoc tinh trong doi tuong
+        console.log(fullnameTag.type)
+        console.log(fullnameTag.name)
+        console.log(fullnameTag.placeholder)
+    
+        //Sua duoc gia tri cua cac thuoc tinh bang js
+        fullnameTag.placeholder = 'NHAP TEN'
+    
+        //Sua css
+        fullnameTag.style.color = 'red'
+        fullnameTag.style.fontSize = '30px'
+        fullnameTag.style.backgroundColor = 'lightgreen'
+    
+        fullnameTag.value = 'TRAN VAN DIEP'
+    
+        function saveData() {
+            console.log('click save data')
+            var fullnameTag = document.getElementById('fullname_id')
+            var emailTag = document.getElementById('email_id')
+            var addressTag = document.getElementById('address_id')
+    
+            console.log({
+                'fullname': fullnameTag.value,
+                'email': emailTag.value,
+                'address': addressTag.value
+            })
+        }
+    
+        function resetData() {
+            console.log('click reset')
+            var fullnameTag = document.getElementById('fullname_id')
+            fullnameTag.value = ''
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+
+.panel{
+    width: 60%;
+    margin: auto;
+    background-color: #FFFFCC;
+}
+.panel-heading{
+
+    display: flex;
+}
+
+.panel-heading img{
+    padding-left: 60px;
+    width: 100px;
+}
+.panel-heading h2{
+    padding-top: 30px;
+    font : Arial;
+    color: #0000CC;
+}
+
+.left-box p{
+text-align: right;
+    font : Arial;
+	font-weight: bold;
+    color: #000066;
+    margin-left: 60px;	
+
+}
+
+.dangky{
+    background-color: #CCCCCC;
+    font : Arial;
+cursor: pointer;
+font-weight: bold;
+}
+
+.nhaplai{
+    background-color: #CCCCCC;
+    font : Arial;
+    cursor: pointer;
+    font-weight: bold;
+}
+input{
+    outline: none;
+	height: 15px;
+}
+
+
+.Input{
+
+    display: flex;
+}
+
+form{
+padding-top: 10px;
+margin-left: 20px;	
+line-height: 34px;
+}
+
+.bookname{
+
+    width: 400px;
+}
+button{
+margin: 0px;
+}
+
+    </style>
+    <title>Exercise 2</title>
+</head>
+<body>
+    <div class="panel">
+<div class="panel-heading">
+    <img src="regis.png" >
+    <h2>Phiếu mượn sách</h2>
+
+</div>
+<div class="Input">
+    <div class="left-box">
+        <p>Mã sinh viên</p>
+        <p>Họ và tên</p>
+        <p>Loại sách</p>
+        <p>Tên sách</p>
+        <p>Ngày mượn</p>
+        <p>Ngày trả</p>
+
+    </div>
+
+    <div class="right-box">
+        <form method="post">
+        <input type="text" name="SVcode">
+        <br>
+        <input type="text" name="name">
+        <br>
+        <select>
+            <option>-- Chọn loại sách --</option>
+            <option>Loai 1</option>
+            <option>Loai 2</option>
+        </select>
+        <br>
+        <input class="bookname" type="text" name="book-name">
+        <br>
+        <input type="datetime-local" name="ngaymuon">
+        <br>
+        <input type="datetime-local"  name="ngaytra">
+        <br>
+    
+        <button class="dangky"><img src="log_in.png">Đăng Ký</button>
+        <button class="nhaplai"><img src="cancel.png">Nhập lại</button>
+        </form>
+    </div>
+</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body{
+    padding: 0%;
+    margin: 0px;
+   
+}
+
+.panel-heading h2{
+
+    font : Arial;
+    color: #0000CC;
+}
+form{
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+
+label{
+    width:  120PX;
+    float: left;
+    text-align: right;
+    font : Arial;
+	font-weight: bold;
+    color: #000066;
+    margin-right: 30px;
+}
+
+.form1 input{
+
+    width: 150px;
+    
+}
+.panel{
+    width: 30%;
+    margin: auto;
+    display:block;
+    background-color: #FFFFCC;
+
+}
+
+.panel-body{
+    display: flex;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+
+.form1{
+    margin-top: 20px;
+    
+
+}
+
+.button {
+    width: 300px;
+    padding-left: 270px;
+    
+    cursor: pointer;
+    border-radius: 10px;
+    padding-bottom: 2px;
+}

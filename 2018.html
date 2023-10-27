@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style type="text/css">
+        .panel{
+            border: solid 3px blue;
+        }
+        .row{
+           width: 200px;
+            background-color: green;
+			color: white;
+			border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        .row:hover{
+        background-color: aqua;
+
+        }
+        h3{
+            padding: 5px;
+            margin: 0px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            background-color: blue;
+            color: white;
+           
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="panel">
+    <h3>Giải phương trình bậc 1</h3>
+			
+		<button onclick="click_1()" class="row">Nhập Giá Trị A</button>
+		<button onclick="click_2()" class="row">Nhập Giá Trị B</button>
+		<button onclick="click_3()" class="row">In Kết Quả</button>
+
+    </div>
+    <script type="text/javascript">
+        var a,b
+        function click_1(){
+            a = parseInt(prompt('Enter a'))
+        }
+        function click_2(){
+            b = parseInt(prompt('Enter b'))
+        }
+         
+         function click_3() {
+            sum=a+b;
+            alert("Tổng của a và b là "+sum)
+        }
+
+    </script>
+
+
+
+   
+    
+
+</body>
+</html>
