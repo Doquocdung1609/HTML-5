@@ -1,0 +1,74 @@
+.panel {
+	width: 500px;
+	border: solid 1px grey;
+	padding: 5px;
+	background-color: #a8e8f1;
+    margin: 0px auto;
+}
+.panel-heading {
+	border: solid 1px grey;
+	width: 241px;
+	background-color: #4eaec1;
+	font-size: 25px;
+    font-weight: bold;
+    color: blue;
+    margin-top:  5px;
+    margin-left:  5px;
+   margin-bottom:  10px;
+
+}
+
+.focus:focus{
+    background-color: yellow;
+}
+
+.panel-body legend{
+    font-weight: bold;
+    color: blue;
+}
+
+th {
+	background-color: #e4e4ef;
+	width: 180px;
+	text-align: left;
+    border-color: aqua;
+    border: solid 1px blue;
+    
+}
+td {
+	background-color: #e4e4ef;
+	width: 250px;
+    border: solid 1px blue;
+}
+
+
+fieldset {
+    width: 400px;
+	margin: 8px;
+	margin-left: 2px;
+	border: solid 1px silver;
+	border-radius: 4px;
+	padding: 8px; 
+}
+legend {
+	padding: 2px;
+}
+
+.form{
+    background-color: rgb(199, 196, 196);
+  
+   
+}
+
+.form button{
+background-color: #4eaec1;
+    cursor: pointer;
+   width: 180px;
+ margin: 2px auto;
+ margin-left: 10px;
+   
+}
+
+.form button:hover{
+    background-color: aqua;
+}

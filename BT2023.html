@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2023.css">
+    <title>Bài tập - quản lý form payment - Lập trình Javascript</title>
+</head>
+<body>
+ <div class="panel">
+<div class="panel-heading">
+<legend>Purchase Order Form</legend>
+</div>
+<div class="panel-body">
+<form>
+<div>
+<fieldset>
+<legend>Product Information</legend>
+<div>
+<table>
+    <tr>
+    <th>Product:</th>
+    <td>
+<select required="true" name="select" id="product"  onchange="addUnitPrice()">
+<option value="">Select</option>
+<option value="650">Comfort Sleeper</option>
+<option value="975">Morgan Kids Bed</option>
+<option value="480">Entertainment Cabinet</option>
+</select>
+</td>
+</tr>
+
+
+<tr>
+    <th>Unit Price($):</th>
+    <td><input required="true" type="number"  disabled="true" value="0" id="unit_price" style="width: 45px" class="focus" ></td>
+</tr>
+
+
+<tr>
+    <th>Quantity:</th>
+    <td><input  type="number"  disabled="true" value="0" id="quantity" style="width: 45px" class="focus" onkeyup="updateQuantity()" ></td>
+</tr>
+
+<tr>
+    <th>Total Price($):</th>
+    <td><input  type="number"  disabled="true" value="0" id="total_price" style="width: 45px" class="focus" ></td>
+</tr>
+</table>
+
+</div>
+
+</fieldset>
+
+
+</div>
+
+
+
+
+<div>
+    <fieldset>
+    <legend>Shipping Information</legend>
+    <div>
+    <table>
+    <tr>
+        <th>Full name:</th>
+        <td><input type="text" id="fullname" class="focus"></td>
+    </tr>
+    
+    
+    <tr>
+        <th>Shipping Address:</th>
+        <td><input type="text" id="shippingaddress" class="focus"></td>
+    </tr>
+    
+    
+    <tr>
+        <th>Credit Card:</th>
+        <td>
+    <select required="true" name="select" id="creditcard" onchange="selectCreditCard()">
+    <option value="">Select</option>
+    <option value="650">VISA </option>
+    <option value="975">Master Card</option>
+    <option value="480">American Express</option>
+    </select>
+    </td>
+    </tr>
+    
+    <tr>
+        <th>Credit Card Number:</th> 
+        <td>
+        <input type="number" id="creditcard1" disabled="true" style="width: 35px" class="focus"  maxlength="4">
+        <input type="number" id="creditcard2" disabled="true" style="width: 35px" class="focus"  maxlength="4">
+        <input type="number" id="creditcard3" disabled="true" style="width: 35px" class="focus"  maxlength="4">
+        <input type="number" id="creditcard4" disabled="true" style="width: 35px" class="focus"  maxlength="4">
+    </td>
+    </tr>
+    </table> 
+    </div> 
+    </fieldset>
+   
+    <fieldset class="form">
+        <button type="Submit" >Submit</button>
+        <button type="Reset" >Reset</button>
+    </fieldset>
+    
+</div>
+
+
+</form>
+
+
+</div>
+
+
+ </div>
+    
+
+
+
+
+    <script type="text/javascript" src="2023.js"></script>   
+</body>
+</html>

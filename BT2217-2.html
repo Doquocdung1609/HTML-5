@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ôn tập HTML/CSS/JS - 60 phút - Web quản lý tin tức</title>
+</head>
+<body>
+    <div class="panel">
+        <div class="panel-heading">
+<div class="logo">
+<h1>LOGO</h1>
+<h2>WEB TIN TUC</h2>
+</div>
+<div class="menu">
+    <ul>
+<li>Trang Chu</li>
+<li>Tin Hoc</li>
+<li>Bieu Mau</li>
+<li>Khoa Hoc</li>
+<li>Tuyen Dung</li>
+<li>Lien He</li>
+    </ul>
+
+
+</div>
+        </div>
+        <div class="panel-body">
+            <div class="panel-body-left">
+
+                <form method="post">
+					<p>NHAP THONG TIN BAI VIET</p>
+					<div class="form">
+					<label>TIEU DE</label>
+					</div>
+					<div class="form">
+					<input required="true" type="text" name="tieude" maxlength="200" minlength="10" id="tieude">
+					</div>
+					<div class="form">
+					<label>HINH ANH</label>
+					</div>
+					<div class="form">
+					<input required="true" type="text" name="hinhanh" id="hinhanh">
+					</div>
+					<div class="form">
+					<label>NOI DUNG</label>
+					</div>
+					<div class="form">
+					<textarea required="true" rows="5" maxlength="500" minlength="20" id="noidung"></textarea>
+					</div>
+					<div class="luu">
+						<button type="button"  onclick="login()">LUU</button>
+						<button type="reset" class="xoa" onclick="resetData()">XOA</button>
+					</div>
+				</form>
+            </div>
+            <div class="panel-body-right">
+                <h4>BAI VIET MOI NHAT</h4>
+                <ul>
+                    <li>BAI 1</li>
+                    <li>BAI 2</li>
+                    <li>BAI 3</li>
+                    <li>BAI 4</li>
+                    <li>BAI 5</li>
+                </ul>
+
+            </div>
+        </div>
+    
+    
+    
+    </div>
+
+    <div class="dialog" id="dialog-id">
+        <div class="dialog-content">
+            <div class="dialog-body">
+              Tao bai viet thanh cong
+            </div>
+            <div class="dialog-footer">
+                <button onclick="closeDialog()">OK</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
