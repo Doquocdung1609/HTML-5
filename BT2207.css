@@ -1,0 +1,209 @@
+.panel{
+
+display: block;
+}
+
+.panel-heading{
+display: block;
+width: 100%;
+
+
+}
+
+.logo{
+background-color: rgb(193, 255, 255);
+display: flex;
+
+
+}
+
+.logo h1{
+    margin-left: 25px;
+	margin-right: 15px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    size: 20px;
+}
+.logo img{
+    width: 70px;
+    
+}
+
+.menu{
+   
+    display: flex;
+	width: 100%;
+	background-color: #1274ec;
+	color: white;
+
+}
+
+
+.center{
+    display: flex;
+   
+}
+
+.center ul{
+    display: flex;
+	list-style-type: none;
+	margin: 5px;
+	padding: 0px;
+    padding-left: 200px;
+	width: 100%;
+}
+
+.center ul li{
+
+    padding-left: 10px;
+	padding-right: 10px;
+	border-right: solid #e4e0e0 1px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	cursor: pointer;
+}
+
+.center ul li:hover{
+
+    background-color:  orange;
+}
+
+
+
+.search input{
+    width: 200px;
+    margin-left: 150px; 
+    margin-top: 4px;
+    padding-left:  20px;
+    border-radius: 20px;
+    padding: 7px;
+    
+}
+
+.panel-body{
+
+display: flex;
+}
+
+.panel-body-left{
+    padding-right: 130px;
+    padding-left: 50px;
+    width: 30%;
+	margin: 0px auto;
+	display: flex;
+}
+
+
+.panel-body-right{
+    float: left;
+    
+    padding-right: 90px;
+	width: 30%;
+
+}
+
+.row {
+    display: flex;
+	
+	border-bottom: solid #f9f7f7 1px;
+}
+.rowbig{
+    float: left;
+	
+	padding: 10px;
+    display: block;
+
+}
+
+
+
+.rowsmall{
+    padding-top: 3px;
+    width: 60%;
+    padding-left: 155px;
+    display: block;
+}
+
+
+
+
+
+.col-8 {
+   
+    width: 50%;
+	float: left;
+	padding: 5px;
+	padding-left: 0px;
+}
+
+.col-8 img{
+width: 700px;
+    
+}
+
+.col-4 {
+    
+    width: 40%;
+	float: left;
+	
+
+}
+
+.col-4 img{
+width: 450px;
+    
+}
+
+.col-3{
+    
+    width: 50%;
+}
+
+.col-3 img{
+    width: 215px;
+}
+
+
+
+.menu-item {
+	display: block;
+	border: solid #e0dede 1px;
+    
+    margin-right: 100px;
+	margin-top: 10px;
+    
+}
+
+.menu-item .menu-title {
+	background-color: orange;
+	border-radius: 3px;
+	color: white;
+	padding: 5px;
+}
+
+.menu-item .menu-content ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 5px;
+}
+
+.menu-item .menu-content ul li {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-bottom: solid #f9f7f7 1px;
+    cursor: pointer;
+}
+
+.menu-item .menu-content ul li:hover{
+    background-color: orange;
+}
+
+.menu-item .menu-content ul li label {
+	background-color: #1274ec;
+	padding: 6px;
+	color: white;
+	margin-right: 5px;
+	border-radius: 4px;
+}
