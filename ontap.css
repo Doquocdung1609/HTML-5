@@ -1,0 +1,144 @@
+form{
+width: 30%;
+padding: 0px;
+margin: 0px auto;
+background-color: rgb(149, 234, 234);
+}
+
+
+
+fieldset{
+
+    border-radius: 5px;
+    width: 355px;
+    margin-top: 10px;
+}
+
+table{
+    width: 350px;
+    border: solid 2px blue;
+    display: block;
+}
+table tr td{
+    border: solid 2px blue;
+}
+table td{
+width: 140px;
+}
+
+table input{
+
+width: 200px;
+}
+table textarea{
+    width: 200px; 
+}
+
+.panel{
+display: block;
+
+}
+.panel-heading{
+    padding-top: 8px;
+padding-left: 8px;
+}
+
+.panel-heading legend{
+
+border: solid 3px black ;
+background-color: #ffffff;
+color: blue;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+width: 260px;
+padding: 4px;
+
+}
+
+.panel-body{
+display: block;
+
+}
+.panel-body legend{
+color: blue;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+
+.credit-number{
+
+    width: 40px;
+}
+
+.panel-footer{
+    background-color: #ffffff;
+width: 99%;
+margin: 0px auto;
+border: solid 2px black;
+
+}
+.button-box{
+
+    width: 25%;
+    margin: 0px auto;
+}
+
+.panel-footer button{
+    
+    cursor: pointer;
+    padding: 3px;
+    border: solid 2px blue;
+
+}
+.btn-success{
+background-color: greenyellow;
+color: white;
+
+}
+.btn-success:hover{
+
+    background-color: aquamarine;
+}
+.btn-warning{
+background-color: red;
+color: white;
+}
+
+.btn-warning:hover{
+
+background-color: orange;
+}
+
+.dialog {
+	width: 100%;
+	height: 100%;
+	background-color: #00000078;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.dialog .dialog-content {
+	width: 300px;
+	margin: 0px auto;
+	background-color: white;
+	margin-top: 15%;
+}
+
+.dialog .dialog-body {
+	padding: 30px;
+	text-align: center;
+}
+
+.dialog .dialog-footer {
+	background-color: #ede8e8;
+	text-align: right;
+	padding: 10px;
+}
+
+.dialog .dialog-footer button {
+	font-size: 18px;
+	padding: 6px 15px;
+}

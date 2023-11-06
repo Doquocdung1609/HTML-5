@@ -1,0 +1,212 @@
+body{
+padding: 0px;
+margin: 0px;
+
+}
+.panel{
+    padding: 0px;
+    margin: 0px;
+     
+}
+
+.panel-heading{
+    background-color: aquamarine;
+
+padding: 0px;
+margin: 0px;
+display: block;
+}
+
+.menu{
+
+display: flex;
+background-color: #aaa;
+}
+.menu img{
+    
+    width:100px;
+}
+
+.menu ul {
+    width: 230px;
+    padding: 0px;
+    margin: 0px auto;
+display: flex;
+list-style-type: none;
+
+}
+
+
+.menu ul li{
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 5px ;
+    background-color: white;
+    color: blue;
+    border-radius: 10px;
+}
+
+.menu ul li:hover{
+    background-color: red;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.search{
+border-radius: 5px;
+background-color: blue;
+margin-left: 550px;
+padding-top: 6px;
+}
+
+.search input{
+
+border-radius: 5px;
+padding: 8px;
+}
+
+.search button{
+    font-weight: bold;
+    border-radius: 5px;
+    color: blue;
+    padding: 8px;
+    cursor: pointer;
+}
+.search button:hover{
+    background-color: red;
+}
+
+.logo{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.logo img{
+    
+    padding-left: 500px;
+    width: 30%;
+    height:150px;
+    
+    object-fit:fill;
+}
+
+.container{
+
+    display: flex;
+}
+
+.container-left{
+
+    display: block;
+
+}
+.container-left ul{
+    width: 150px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.container-left ul li{
+    cursor: pointer;
+    background-color: #f2eded;
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    list-style-type:none ;
+    border-top: solid 4px white; 
+}
+.container-left ul li:hover{
+    border-right: solid 5px black;
+    background-color: #aaa;
+}
+
+.container-right{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+padding-left: 50px;
+display: block;
+}
+.container-right p{
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(18, 142, 142);
+border-bottom:solid 2px #aaa  ;
+}
+
+.bigdata{
+    display: flex;
+}
+.bigdata1{
+    display: flex;
+    margin-top: 10px;
+}
+
+
+.data-left{
+    border-bottom-right-radius: 10px;
+    background-color: green;
+    width: 46%;
+    height: inherit;
+display: block;
+
+
+}
+.data-left img{
+
+padding-top: 10px;
+width: 600px;
+height: 200px;
+cursor: pointer;  
+
+}
+.data{
+display: block;
+
+}
+
+
+
+.data-center{
+   
+    border-bottom-right-radius: 10px;
+    background-color: green;
+    width: 25%;
+    height: inherit;
+display: block;
+margin-left: 10px;
+}
+.data-center img{
+
+    padding-top: 10px;
+    width: 320px;
+    height: 200px;
+    cursor: pointer;    
+}
+
+.data-right{
+    border-bottom-right-radius: 10px;
+    background-color: green;
+    width: 25%;
+    height: inherit;
+display: block;
+margin-left: 10px;
+    
+}
+.data-right img{
+    padding-top: 10px;
+    width: 320px;
+    height: 200px;
+    cursor: pointer;  
+}
+
+h1{
+    color: white
+}

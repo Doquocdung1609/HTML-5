@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ontap.css">
+    <title>Bài tập - quản lý form payment</title>
+</head>
+<body>
+    <form method="post">
+    <div class="panel">
+        <div class="panel-heading">
+            <legend>Purchase Order Form</legend>
+        </div>
+        <div class="panel-body">
+            <fieldset>
+                <legend>Product Information</legend>
+                <table>
+                    <tr>
+                        <td>Product</td>
+                        <td>
+                            <select required="true" name="productinfor" id="product" onchange="changeProduct()">
+                                <option value="" >Select</option>
+                                <option value="650">Comfort Sleeper</option>
+                                <option value="975">Morgan Kids Bed</option>
+                                <option value="480" >Entertainment Cabinet</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Unit Price($):</td>
+                        <td>
+                            <input required="true" type="number" id="unit_price" disabled="true" value="0" name="unitpriceinfor">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Quantity:</td>
+                        <td>
+                            <input required="true" type="number" id="quantity" disabled="true" value="0" name="quantityinfor" onkeyup="totalprice()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Total Price($):</td>
+                        <td>
+                            <input required="true" type="number" id="total_number" disabled="true" value="0" name="totalpriceinfor">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Shipping Information</legend>
+                <table>
+                    <tr>
+                        <td>Full Name:</td>
+                        <td>
+                            <input required="true" type="text" id="fullname" name="fullnameinfor">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Shipping Address:</td>
+                        <td>
+                            <textarea required="true" name="address" id="shipping_address" rows="3" name="shippingaddressinfor"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Credit Card</td>
+                        <td>
+                            <select required="true" name="creditcard" id="credit_card" name="creditcardinfor" onchange="updatecardnumber()">
+                                <option value="">Select</option>
+                                <option value="650">Visa</option>
+                                <option value="975">Master Card</option>
+                                <option value="480">American Express</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Credit Card Number:</td>
+                        <td>
+                            <input disabled="true" required="true" type="text" pattern="[0-9]{4}" class="credit-number" id="card-1" name="card1infor">
+                            <input disabled="true" required="true" type="text" pattern="[0-9]{4}" class="credit-number" id="card-2" name="card2infor" >
+                            <input disabled="true" required="true" type="text" pattern="[0-9]{4}" class="credit-number" id="card-3" name="card3infor">
+                            <input disabled="true" required="true" type="text" pattern="[0-9]{4}" class="credit-number" id="card-4" name="card4infor">
+                        </td>
+
+                    </tr>
+                </table>
+
+            </fieldset>
+        
+        </div>
+        <div class="panel-footer">
+            <div class="button-box">
+            <button class="btn-success" type="button" onclick="savedata()">Submit</button>
+            <button class="btn-warning" type="reset" onclick="resetData()">Reset</button>
+        </div>
+        </div>
+    </div>
+</form>
+    
+
+<div class="dialog" id="dialog-id">
+    <div class="dialog-content">
+        <div class="dialog-body">
+                LUU THONG TIN THANH CONG
+        </div>
+        <div class="dialog-footer">
+            <button onclick="closedialog()">OK</button>
+        </div>
+    </div>
+</div>
+
+<div class="table" style="margin-top:20px ;">
+    <div class="table-heading">
+        PRODUCT AND SHIPPING INFORMATION
+    </div>
+    <div class="table-body">
+        <table border="1" style="width: 100%;" cellspacing="0" cellpading="0">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Product</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
+                    <th>Full Name</th>
+                    <th>Shipping Address</th>
+                    <th>Credit Card</th>
+                    <th>Credit Card Number 1</th>
+                    <th>Credit Card Number 2</th>
+                    <th>Credit Card Number 3</th>
+                    <th>Credit Card Number 4</th>
+                </tr>
+            </thead>
+            <tbody id="data-table">
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="ontap.js"></script>
+</body>
+</html>
